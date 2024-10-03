@@ -5,6 +5,8 @@ import numpy as np
 import pandas as pd
 from io import BytesIO  # Importar BytesIO
 from matplotlib.backends.backend_pdf import PdfPages
+from datetime import datetime
+
 
 # Usar el backend 'Agg' para evitar problemas con Streamlit
 import matplotlib
@@ -369,13 +371,18 @@ if st.session_state.page == "Next":
                 *elartedelmantenimientosuntzu@gmail.com*
                 """)
 
-st.markdown("""
-    <hr>
-    <p style='text-align: center; font-size: 12px;'>
-        Si aprecias nuestro trabajo considera hacer una donación via PayPal - elartedelmantenimientosuntzu@gmail.com<br>
-        "Gracias por contribuir con el proyecto"
-    </p>
-    """, unsafe_allow_html=True)
+# Obtener el día actual
+hoy = datetime.now().day
+
+# Mostrar el mensaje solo entre los días 29-05 de cada mes
+if (29 <= hoy <= 31) or (1 <= hoy <= 5):
+    st.markdown("""
+        <hr>
+        <p style='text-align: center; font-size: 12px;'>
+            Si aprecias nuestro trabajo considera hacer una donación via PayPal - elartedelmantenimientosuntzu@gmail.com<br>
+            "Gracias por contribuir con el proyecto"
+        </p>
+        """, unsafe_allow_html=True)
 
 
 # streamlit run P4reto6.py
