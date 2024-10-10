@@ -198,11 +198,11 @@ if st.session_state.page == "Aprendiendo":
                 fue creado en 1937, poco antes del inicio de la decada del 40.
                 - Desde su creación los elementos del gráfico de Pareto siempre habian sido los mismos, Eventos, Frecuencia, y Porcentaje
                 Acumulado, posteriormente se realiza un análisis sobre el 20% de eventos que teoricamente ocasionan el 80% de la fallas y en
-                función de este análisis se elaboran planes para corregir la causa raiz de los desvios que generan esos eventos, que generan
+                función de este análisis se elaboran planes para corregir la causa raiz de los desvios que generan esos eventos, que a su vez ocacionan
                 retraso o perjudican nuestros procesos, hasta allí todo bien (somos muy creyentes de practicas minimalistas), pero que nos 
                 impedia tener un poco más de ayuda visual?, respondemos rapidamente a esa pregunta con el motivo que nos lleva crear y compartir 
                 esta app, descubrimos que es una mezcla de limitaciones tecnológicas y conformidad creativa, ya que en el gráfico tradicional de 
-                pareto es muy simple tomar un lapiz y destacar cuales son eventos son los que cumplen con la relación 80-20 y adicionalmente a eso
+                pareto es muy simple tomar un lapiz y destacar cuales son eventos que cumplen con la relación 80-20 y adicionalmente a eso
                 con las herramientas tradicionales de graficación es un poco complicado resaltar ésa área que nosotros llamamos "Pay Attention Zone"
                 de forma automática, con esá combinación de factores, el gráfico de pareto se mantuvo inmutable por casi 90 años.
                 - "Pay attention Zone" fue una idea inicialmente fugaz pero que inesperadamente desato una avalancha de insights que vendremos a 
@@ -250,14 +250,14 @@ if st.session_state.page == "Aprendiendo":
     st.image("P4retoImage5.png", caption="Generado con Adobe Firefly y Canva", use_column_width=True)  # Ruta de la imagen local
     st.header('Frecuencia')
     st.markdown("""
-                **Frecuencia: Cómo Medir la Repetición de los Eventos**
+                **Cómo Medir la Repetición de los Eventos**
 
-                ¿Qué es la frecuencia en el análisis de Pareto? La frecuencia se refiere al número de veces que un evento ocurre en un período de tiempo determinado. Es uno de los parámetros clave en el gráfico de Pareto, ya que nos permite identificar cuáles son los eventos que suceden con mayor regularidad, y, por lo tanto, cuáles deberían recibir mayor atención a la hora de implementar acciones correctivas.
+                ¿Qué es la frecuencia en el análisis de Pareto? La frecuencia se refiere al número de veces que un evento ocurre en un período de tiempo determinado. Es uno de los parámetros clave en el gráfico de Pareto, ya que nos permite identificar cuáles son los eventos que suceden con mayor regularidad, y por lo tanto, cuáles deberían recibir mayor atención a la hora de implementar acciones correctivas.
                 Importancia de la Frecuencia en la Industria: En el entorno industrial, medir la frecuencia de eventos como fallas de equipos, defectos de producción o interrupciones de procesos es fundamental. Los eventos más frecuentes suelen tener el mayor impacto en la productividad o en los costos operativos. Por ejemplo, si un mismo fallo en una máquina ocurre varias veces en un mes, ese evento probablemente tendrá una mayor prioridad para ser corregido que un evento menos frecuente pero de alta gravedad.
                 Cómo registrar la frecuencia: Es esencial contar con un sistema confiable para medir cuántas veces ocurre un evento. Aquí hay algunos consejos para realizar este seguimiento:
                 1. Definir claramente los eventos: Como mencionamos en la sección anterior, los eventos deben estar bien definidos para evitar confusiones. Por ejemplo, si estamos midiendo fallas de equipo, se deben establecer criterios claros sobre qué constituye una falla que debe ser registrada.
                 2. Establecer un período de tiempo: La frecuencia siempre debe medirse dentro de un período específico, ya sea diario, semanal o mensual, dependiendo del proceso que se esté analizando. Esto permite hacer comparaciones más precisas y detectar tendencias a lo largo del tiempo.
-                3. Utilizar software de registro: Sistemas automatizados o semi-automatizados, como los CMMS (sistemas de gestión de mantenimiento computarizados), pueden facilitar el seguimiento de la frecuencia de eventos, asegurando que se registren de manera rápida y precisa.
+                3. Utilizar software de registro: Sistemas automatizados o semi-automatizados, como los CMMS (sistemas de gestión de mantenimiento computarizados), o MES (Manufacturing Execution System) pueden facilitar el seguimiento de la frecuencia de eventos, asegurando que se registren de manera rápida y precisa.
                 4. Asegurarse de que todos los eventos relevantes sean registrados: La omisión de un evento puede sesgar el análisis y dificultar la identificación de los problemas más frecuentes.
 
                 Ejemplos de Frecuencia en la Industria:
@@ -343,7 +343,7 @@ if st.session_state.page == "Aprendiendo":
     st.markdown("""
                 El Plan de Acción representa el punto culminante de todo el análisis previo. Es aquí donde convergen los eventos registrados, la frecuencia con la que ocurren, la atención prestada y los insights descubiertos. El éxito de este plan depende directamente de la precisión con la que se haya diagnosticado la causa raíz de los eventos, lo que significa que mientras más minucioso y exacto haya sido el proceso, mejores serán los resultados obtenidos en esta fase.
 
-                El Plan de Acción no es solo una lista de tareas; es una git estructurada que responde directamente a los problemas identificados. Para que sea efectivo, debe estar fundamentado en datos sólidos, una evaluación objetiva y la verificación exhaustiva de las hipótesis planteadas en las fases anteriores. Cada acción debe estar alineada con la realidad operativa y adaptarse a las capacidades de la organización, con un enfoque en resolver definitivamente las causas que generaron los eventos en primer lugar.
+                El Plan de Acción no es solo una lista de tareas; es una guía estructurada que responde directamente a los problemas identificados. Para que sea efectivo, debe estar fundamentado en datos sólidos, una evaluación objetiva y la verificación exhaustiva de las hipótesis planteadas en las fases anteriores. Cada acción debe estar alineada con la realidad operativa y adaptarse a las capacidades de la organización, con un enfoque en resolver definitivamente las causas que generaron los eventos en primer lugar, cada acción debe tener un responsable y una fecha limite de implementación.
 
                 La precisión en el diagnóstico de las causas subyacentes asegura que el Plan de Acción esté dirigido a resolver los problemas de raíz, evitando recurrencias y optimizando recursos. Por lo tanto, cada paso que se implemente debe estar bien justificado, con un enfoque preventivo, correctivo o de mejora, dependiendo del tipo de evento y su impacto. La priorización es clave aquí, centrando esfuerzos en los eventos críticos identificados en la "Pay Attention Zone" para maximizar los resultados y lograr una mejora contínua.
                 """)
